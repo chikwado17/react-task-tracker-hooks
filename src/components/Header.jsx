@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const Header = () => {
+
+    const onClick = () => {
+        alert('clicked');
+    }
+
     return (
         <header className="header">
             <h1>Task Tracker</h1>
-            <button className="btn">Add</button>
+            <Button onClick={onClick} color='green' text='Add' />
         </header>
     )
 }
